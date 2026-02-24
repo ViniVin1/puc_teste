@@ -23,7 +23,7 @@ jobs:
     - name: Instalar dependências
       run: 
         rm -rf node_modules
-        npm ci
+        npm ci --include=dev
 
       # Step 4
     - name: Executar Testes
