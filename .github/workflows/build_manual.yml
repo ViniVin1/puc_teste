@@ -21,9 +21,12 @@ jobs:
 
       # Step 3
     - name: Instalar dependências
-      run: 
+      run: |
         rm -rf node_modules
-        npm ci --include=dev
+        npm ci
+
+    - name: Debug
+      run: ls -la node_modules/.bin
 
       # Step 4
     - name: Executar Testes
