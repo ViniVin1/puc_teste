@@ -1,0 +1,17 @@
+name: Hello, World!
+
+# Define o evento que dispara o workflow
+on:
+  workflow_dispatch: # Dispara manualmente
+
+# Define os Jobs a serem executados
+jobs:
+    # Define o Job hello
+    hello:
+      # Define o ambiente onde o workflow será executado
+      runs-on: ubuntu-latest
+
+      # Define os passos a serem executados
+      steps:
+        - name: Print Texto
+          run: echo "Hello, World!"
